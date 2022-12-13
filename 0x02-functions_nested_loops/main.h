@@ -1,0 +1,4 @@
+#ifndef PUTCHAR_H_INCLUDED
+#DEFINE PUTCHAR_H_INCLUDED
+
+int _putchar(char);
