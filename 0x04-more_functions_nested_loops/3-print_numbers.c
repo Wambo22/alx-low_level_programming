@@ -1,5 +1,7 @@
 #include  "main.h"
 #include <stdio.h>
+
+/* betty style doc for function main goes there */
 /**
  * print_numbers - prints 0123456789\n
  *
