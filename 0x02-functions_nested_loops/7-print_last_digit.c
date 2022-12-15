@@ -8,7 +8,7 @@
  * Return the value of last digit
  *
  */
-void print_last_digit(int n)
+int print_last_digit(int n)
 {
 int ld;
 
