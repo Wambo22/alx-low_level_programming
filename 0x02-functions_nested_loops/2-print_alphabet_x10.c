@@ -4,11 +4,11 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * print_alphabet_x10 - prints 10 times the alphabet
  *
  * Return: Always 0 (success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char c;
 	int i = 0;
@@ -25,5 +25,4 @@ int main(void)
 		putchar('\n');
 		i++;
 	}
-	return (0);
 }
