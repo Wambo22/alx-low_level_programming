@@ -1,28 +1,25 @@
-#include <stdio.h>
 #include "main.h"
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * print_alphabet_x10 - prints 10 times the alphabet
+ * print_alphabet_x10 - prints the alphabet in lowercase x10
  *
- * Return: Always 0 (success)
+ * Return: nothing on success.
  */
 void print_alphabet_x10(void)
 {
-	char c;
-	int i = 0;
+int start = 97, end = 122, count = 1;
 
-	while (i < 10)
-	{
-		c = 'a';
+while (count <= 10)
+{
+while (start <= end)
+{
+putchar(start);
+start++;
+}
+putchar('\n');
 
-		while (c <= 'z')
-		{
-		putchar(c);
-		c++;
-		}
-		putchar('\n');
-		i++;
-	}
+start = 97;
+count++;
+}
 }
