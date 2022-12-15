@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_most_numbers - prints
  *
@@ -10,7 +11,7 @@ char c;
 for (c = 'a'; c <= '9'; c++)
 {
 if (!(c == '2' || c == '4'))
-_putchar(c);
+putchar(c);
 }
-_putchar('\n');
+putchar('\n');
 }
