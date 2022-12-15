@@ -1,29 +1,17 @@
-#include <stdio.h>
 #include "main.h"
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
+ * print_alphabet - print all alphabet in lowercase
  */
+
 void print_alphabet(void)
 {
-	char c;
-	int i = 0;
+char letter;
 
-	while (i < 10)
-	{
-		c = 'a';
-
-		while (c <= 'z')
-		{
-		putchar(c);
-		c++;
-		}
-		putchar('\n');
-		i++;
-	}
-	return (void);
+for (letter = 'a'; letter <= 'z'; letter ++)
+{
+putchar(letter);
+}
+putchar('\n');
 }
