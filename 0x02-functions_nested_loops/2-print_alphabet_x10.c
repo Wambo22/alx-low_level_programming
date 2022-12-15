@@ -1,22 +1,29 @@
 #include <stdio.h>
+#include "main.h"
+/* more headers goes there */
 
+/* betty style doc for function main goes there */
 /**
  * main - Entry point
  *
- * Description: 'prints 10 times the alphabet'
- *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int ten;
 	char c;
+	int i = 0;
 
-	for (ten = 0; ten < = 9; ten++)
-{
-	for (c = 'a'; c < = 'z'; c++)
-	_putchar(c);
-	_putchar('\n');
-}
-return (0);
+	while (i < 10)
+	{
+		c = 'a';
+
+		while (c <= 'z')
+		{
+		putchar(c);
+		c++;
+		}
+		putchar('\n');
+		i++;
+	}
+	return (0);
 }
