@@ -1,15 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_alphabet - print all alphabet in lowercase
+ * _isalpha - Return 1 if c is a letter. lowercase or uppercase
+ *
+ * @c: The int to print
+ * Return: Always 0.
  */
 
-void print_alphabet(void)
-{
-char letter;
+int _isalpha(int c)
 
-for (letter = 'a'; letter <= 'z'; letter++)
-putchar(letter);
-putchar('\n');
+{
+if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
+{
+return (1);
+}
+
+else
+{
+return (0);
+}
 }
