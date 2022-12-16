@@ -1,29 +1,32 @@
-#include "main.h
 #include "main.h"
-
-
+#include <stdio.h>
 
 /**
+ * print_triangle - prints a triangle.
+ * @size: triangle size
  *
- *  * main - check the code
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
-
-int main(void)
-	
+ * Return: nothing on success
+ */
+void print_triangle(int size)
 {
-	
-	    print_triangle(2);
-	    
-	        print_triangle(10);
-		
-		    print_triangle(1);
-		    
-		        print_triangle(0);
-			
-			    return (0);:ewwq
-				    "
+int start = 0, end = size, count;
+
+if (size <= 0)
+putchar('\n');
+else
+{
+for (count = 0; count < end; count++)
+{
+while (start < end)
+{
+if ((start + count + 1) >= end)
+putchar('#');
+else
+putchar(' ');
+start++;
+}
+start = 0; 
+putchar('\n');
+}
+}
+}
