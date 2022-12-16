@@ -25,7 +25,7 @@ else
 putchar(' ');
 start++;
 }
-start = 0; 
+start = 0;
 putchar('\n');
 }
 }
